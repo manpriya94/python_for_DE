@@ -1,0 +1,105 @@
+1- write a program which takes 3 inputs from user as principle amount (int) and rate of annual interest (float) and total tenure (in years). write a program to print total amount value at the end fo the tenure
+
+example : principle : 100 , interest percent 8 , tenure = 2  then amount will be : 100*1.08*1.08 = 116.64
+
+2- Odd or Even : Ask the user to enter a number. Print whether the number is even or odd.
+
+3- Ask the user to enter their age. If age is:
+
+less than 13 → print "Child"
+
+between 13 and 19 → print "Teenager"
+
+20 or more → print "Adult"
+
+
+4- Create two variables: username = "admin" and password = "1234".
+
+Ask the user to input username and password.
+
+If both match, print “Login successful”, else “Invalid credentials”.
+
+
+5- Assignment 6: Find the Largest Number. Ask the user to enter three numbers a, b ,c with 3 inputs
+Print the largest among them.
+
+
+6- Assignment 8: Temperature Converter : Ask the user to enter temperature in Celsius
+
+Convert it to Fahrenheit using the formula:
+Fahrenheit = (Celsius × 9/5) + 32
+
+Print the result in a user-friendly format, like:
+"37°C is equal to 98.6°F"
+ 
+7- Number Type Checker : Ask the user to input a number.
+
+Print whether it is:
+
+Positive
+
+Negative
+
+Zero
+
+
+8- Password Strength Checker (Basic): Ask the user to enter a password.
+
+If the password is:
+
+Less than 6 characters → print "Weak Password"
+
+6–10 characters → print "Moderate Password"
+
+More than 10 characters → print "Strong Password"
+ 
+ps: you can use len function to check the string length ex len(password)
+
+
+9- Leap Year Checker : Ask the user to enter a year.
+
+Print whether it is a leap year or not.
+
+Rules:
+
+A year is a leap year if:
+
+It is divisible by 4 and
+
+Not divisible by 100 unless it's also divisible by 400
+
+Example:
+
+2000 → Leap year
+
+1900 → Not a leap year
+
+2024 → Leap year
+
+
+
+10 - Bill Splitter with Tip: Ask the user to input:
+
+Total bill amount
+
+Tip percentage (e.g., 10 for 10%)
+
+Number of people
+
+Calculate:
+
+Tip amount = (bill × tip %) / 100
+
+Total amount = bill + tip
+
+Per person share = total amount / number of people
+
+Print all three values clearly.
+
+example output :
+
+Tip: ₹100.0
+Total Bill (with tip): ₹1100.0
+Each person should pay: ₹275.0
+
+
