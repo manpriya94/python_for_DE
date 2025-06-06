@@ -8,3 +8,9 @@ Keep the total length of the username same
 eg:
 Input: ankitbansal@gmail.com
 Output: a********l@gmail.com """
+
+email = input("enter email ending with @gmail.com : ")
+email_split = email.split('@',2)
+domain = email_split[0]
+masking = domain[0] +  '*' * (len(domain) - 2) + domain[-1]
+print(masking + '@' + email_split[1])
