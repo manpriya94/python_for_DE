@@ -24,8 +24,15 @@ universities = [
 
 def uni_dict() : 
     university_dict = {}
-    for record in universities :
-        
+    for univ, students, fees in universities :
+        university_dict[univ] = { 
+            "enrolled_student" : students ,
+            "fees" : fees
+        }
+    return university_dict
+
+result = uni_dict()
+print(result)
         
         
 
