@@ -6,11 +6,13 @@ eg:
 s = "welcome to python"
 fdict = {}
 def most_frequent_char(s) :
-    for letter in s :
-        fdict[letter] = 0
+    for letter in s.replace(" ","") :
         if letter in fdict :
             fdict[letter] = fdict[letter] + 1
-    return fdict
+        else :
+            fdict[letter] = 1 
+       
+    return max(fdict , key = fdict.get)
 
 result = most_frequent_char(s)
 print(result)

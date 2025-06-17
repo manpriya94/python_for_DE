@@ -16,8 +16,10 @@ marks = {
 }
 
 stu_avg = {}
-
+namelist = []
 for a , b in marks.items() :
     stu_avg[a] = ( b[0] + b[1] + b[2] ) // 3
+    if stu_avg[a] > 80 :
+        namelist.append(a)
 
-print(stu_avg)
+print(namelist)
