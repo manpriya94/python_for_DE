@@ -1,0 +1,74 @@
+                               NamasteKart Order File Validator - Project Description
+
+Project Background
+
+NamasteKart is an online retail store operating in Mumbai and Bangalore. Every day, it generates transaction
+files from both cities and sends them to the analytics team for validation. You, as a data engineer, are
+responsible for building an automated validation system that processes all daily order files, applies a set of
+validation rules, and sorts the files accordingly.
+
+Folder Structure
+NamasteKart/
+ incoming_files/
+ YYYYMMDD/ <- daily order files (input)
+ success_files/
+ YYYYMMDD/ <- valid files (output)
+ rejected_files/
+ YYYYMMDD/ <- rejected files + error details (output)
+
+Files Description
+Each incoming file contains a list of orders with fields such as:
+- order_id
+- product_id
+- order_date
+- city
+- quantity
+- total_sales_amount
+
+You are also provided a product master file, which contains:
+- product_id
+- product_name
+- price
+
+
+Validation Rules
+1. Product ID should exist in the product master table.
+2. Total sales amount must equal product_price * quantity.
+3. Order date should not be in the future (compared to current date).
+4. No field should be empty (all fields must have values).
+5. City must be either 'Mumbai' or 'Bangalore'.
+
+Expected Behavior
+1. Read all files from: NamasteKart/incoming_files/YYYYMMDD/
+
+2. For each file:
+- If any one order fails validation, the entire file is considered rejected.
+- Valid files should be moved to: NamasteKart/success_files/YYYYMMDD/
+- Rejected files should be moved to: NamasteKart/rejected_files/YYYYMMDD/
+
+3. For every rejected file, create an error file:
+- error_{original_file_name}.csv
+This file should contain only the rejected order rows, and an additional column:
+- rejection_reason (If multiple reasons exist, list them separated by semicolons)
+
+Email Notification
+Once all files are processed, send an email to the business team with:
+Subject:
+validation email YYYY-MM-DD
+Email Body Example:
+Total 10 incoming files processed.
+8 files passed validation.
+2 files failed validation.
+
+If there are no incoming files for the day, send an email with:
+No incoming files found for YYYY-MM-DD.
+
+Goal
+Automate the entire pipeline:
+- Read
+- Validate
+- Organize
+- Log rejections
+- Notify business team
+
+Make sure your code is modular using functions wherever applicable.
