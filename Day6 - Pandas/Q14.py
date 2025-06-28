@@ -1,0 +1,1 @@
+#14-find all the orders where customer id starts with 'D' and ends with zero(0)

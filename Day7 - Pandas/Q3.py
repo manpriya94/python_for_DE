@@ -1,0 +1,1 @@
+#3- write a program to print cities where we have all 3 kinds of returns (others,bad quality,wrong items)

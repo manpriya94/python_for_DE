@@ -1,0 +1,1 @@
+#8- write a program to find avg sales and avg profit for each category

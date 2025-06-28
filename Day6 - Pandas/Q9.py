@@ -1,0 +1,1 @@
+#9- for the previous(7th) question display all the columns from order_date to category (as per the order in dataset)

@@ -1,0 +1,76 @@
+1- Write a function that returns True if there are any duplicate elements in the list, otherwise False.
+
+a) first solve it with time complexity: O(n²)
+b) optimize it for O(n)
+
+Example Input:
+[1, 2, 3, 4, 5]
+output : False
+
+Example Input:
+[1, 2, 3, 4, 5 , 3]
+output : True
+
+
+2- Write a function to return all pairs in a list whose sum is equal to a given target.
+
+def find_pairs(arr, target_sum):
+    # your code here
+
+Example Input:
+[1, 2, 3, 4, 5], target_sum = 6
+Output: (1, 5), (2, 4)
+
+Expected Time Complexity: O(n²)
+
+
+3- Assume there are no duplicates in your list . Solve the above question 2 again.
+Expected Time Complexity: O(n)
+
+4- Design a system to manage students, their courses, and grades using classes, objects, init method, instance methods, class variables, class methods.
+
+Requirements:
+
+Class: Student
+Attributes:
+
+name (string)
+
+roll_no (int)
+
+courses (dictionary with course name as key and grade as value)
+
+
+Class Variable:
+
+student_count – tracks how many Student objects have been created
+
+
+Methods:
+
+__init__(self, name, roll_no) → Initializes student details and empty courses
+
+enroll_course(self, course_name) → Adds the course with grade as None
+
+update_grade(self, course_name, grade) → Updates the grade for the course
+
+get_details(self) → Prints student name, roll_no, and course info
+
+Class Method:
+
+get_total_students(cls) → Returns total students created
+
+
+
+
+example usage :
+s1 = Student("Ankit", 101)
+s1.enroll_course("Math")
+s1.update_grade("Math", "A")
+s1.get_details()
+
+s2 = Student("Neha", 102)
+s2.enroll_course("Science")
+s2.update_grade("Science", "B")
+
+print(Student.get_total_students())       # Output: 2

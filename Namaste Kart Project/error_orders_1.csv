@@ -1,4 +1,0 @@
-order_id,order_date,product_id,quantity,sales,city,rejection_reason
-9,04-01-2023,600,3,30000,Bangalore,product_id not found in product master file
-10,04-01-2023,600,3,30000,Hyderabad,product_id not found in product master file
-12,,,,,product_id not found in product master file

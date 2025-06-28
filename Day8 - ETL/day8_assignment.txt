@@ -1,0 +1,28 @@
+use assignment_orders.json file for the assignment
+
+write python program to flatten the json and load data into MySQL database below tables
+
+CREATE TABLE `orders` (
+   `order_id` bigint,
+   `order_date` date,
+   `total_amount` double DEFAULT NULL,
+   `customer_id` bigint DEFAULT NULL,
+   `product_id` text,
+   `quantity` bigint DEFAULT NULL
+ ) 
+
+
+CREATE TABLE `products` (
+   `product_id` text,
+   `name` text,
+   `category` text,
+   `price` double DEFAULT NULL
+ ) 
+
+
+CREATE TABLE `customers` (
+   `customer_id` bigint,
+   `name` text,
+   `email` text,
+   `address` text
+ ) 

@@ -1,0 +1,1 @@
+#16- from order id column extract the country name(first 2 letters from order id) and populate in a new column country

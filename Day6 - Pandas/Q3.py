@@ -1,0 +1,1 @@
+#3- find all the orders where there was a loss (profit<0) in only east and west region

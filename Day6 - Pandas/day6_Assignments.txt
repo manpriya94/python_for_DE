@@ -1,0 +1,50 @@
+0-  Read the orders.csv file . Explore below functions on the dataframe
+df.head()          # First 5 rows
+df.tail()          # Last 5 rows
+df.shape           # (rows, columns)
+df.columns         # List of column names
+df.info()          # Data types and nulls
+df.describe()      # Summary stats for numeric columns
+df.dtypes          # datatypes
+
+
+1- fetch all the orders with indexes  multiple of 5 eg : 5,10,15,20 and so on..... . Display order_id , category and sales columns only 
+2- find all orders in furniture category with sales amount between 1000 and 1200
+3- find all the orders where there was a loss (profit<0) in only east and west region
+4- create a new column in the orders dataframe with name profit_flag. Set its value as as per below rule 
+"High Profit" if profit > 100
+"Medium Profit" if profit>50
+"Low Profit" if profit>=0
+"loss" if profit<0
+
+5- in the orders data frame rename column names to upper case ..
+eg order_id should be ORDER_ID, ship mode should be SHIP_MODE and so on
+
+6- again change the column names back to lower case
+
+7- set the index of orders dataframe to order_id and fetch order details(all columns) of following list of orders : 
+CA-2019-106320	
+CA-2020-152156
+CA-2019-117415
+CA-2018-146703
+
+8- for the previous question display columns order id, order date , sales and category columns in the given order
+
+9- for the previous(7th) question display all the columns from order_date to category (as per the order in dataset)
+
+10- sort the index (order id) in descending order for the dataframe 
+
+11- write the result of previous question into a csv file in your local machine
+
+12- sort the dataframe column by sales in ascending order , in case of a tie it should be sorted by profit in descending order 
+
+13- reset the index 
+
+14-find all the orders where customer id starts with 'D' and ends with zero(0)
+
+15-delete all the rows where profit is negative 
+
+16- from order id column extract the country name(first 2 letters from order id) and populate in a new column country
+
+17- display top 5 rows based on highest sales value in West region
+
